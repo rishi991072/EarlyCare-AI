@@ -1,7 +1,10 @@
 import { useEffect, useState } from "react";
 import { Activity, ArrowRight, CheckCircle2, ClipboardList, HeartPulse, ShieldCheck, Stethoscope, AlertTriangle, LoaderCircle } from "lucide-react";
 
-const API = import.meta.env.VITE_API_BASE_URL || "http://127.0.0.1:8000";
+const API = import.meta.env.VITE_API_BASE_URL ?? (
+  import.meta.env.DEV ? "http://127.0.0.1:8000" : ""
+);
+
 type Symptom = { id: string; label: string };
 type Result = {
   assessment_type: string;
