@@ -1,0 +1,1 @@
+Processed datasets and train/validation/test splits belong here. Keep reproducible preprocessing code in the project and do not commit sensitive data. Avoid leakage between splits and preserve the split strategy in documentation.

@@ -1,0 +1,1 @@
+Use this directory for exploratory data analysis notebooks after selecting and documenting a suitable dataset. Keep notebooks reproducible and remove identifiable or sensitive data from outputs before sharing.

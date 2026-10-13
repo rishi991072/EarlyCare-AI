@@ -1,0 +1,1 @@
+No trained model is included in this starter. Disease prediction must remain disabled until a suitable dataset is reviewed and a model is trained and evaluated on a held-out test set. Never claim medical validation from demo inputs or training-set scores.
