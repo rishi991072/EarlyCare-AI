@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # EarlyCare AI
 AI-Powered Early Disease Screening and Health Risk Assessment System
 
@@ -94,3 +95,7 @@ EarlyCare-AI/
 
 ## Next development milestone
 Choose and verify a real dataset before training any ML model. Record its source, licence, intended target, feature definitions, population, collection method, and known biases. Do not use synthetic demo examples as model training evidence.
+=======
+# EarlyCare-AI
+AI-powered preliminary health screening and awareness platform
+>>>>>>> d35419be73d94600a43ab86ca34d70ae159f32b6
