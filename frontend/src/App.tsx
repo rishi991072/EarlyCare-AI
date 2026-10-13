@@ -168,7 +168,7 @@ export default function App() {
       </div>
 
       {result && <section id="results" className={`results-card result-${result.urgency}`} aria-live="polite">
-        <div className="result-top"><div className="result-icon">{result.urgency === "emergency" ? <AlertTriangle size={24}/> : <ClipboardList size={24}/>}</div><div><span className="eyebrow">ASSESSMENT RESPONSE · {result.assessment_type.replaceAll("_"," ")}</span><h2>{result.title}</h2></div></div>
+        <div className="result-top"><div className="result-icon">{result.urgency === "emergency" ? <AlertTriangle size={24}/> : <ClipboardList size={24}/>}</div><div><span className="eyebrow">ASSESSMENT RESPONSE · {result.assessment_type.replace(/_/g, " ")}</span><h2>{result.title}</h2></div></div>
         <p className="result-summary">{result.summary}</p>
         {result.warning_signs.length > 0 && <div className="warning-list"><b>Warning signs selected</b><p>{result.warning_signs.join(", ")}</p></div>}
         <h3>Recommended next steps</h3><ul className="next-steps">{result.next_steps.map((s,i) => <li key={i}><CheckCircle2 size={18}/><span>{s}</span></li>)}</ul>
